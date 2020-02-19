@@ -654,15 +654,15 @@ data['city'] = 'Tokyo'
 print(data)
 'city' in data
 
-class GrumpyDict(dict):
-	def __repr__(self):
-		print("NONE OF YOUR BUSINESS")
-		return super().__repr__()
+# class GrumpyDict(dict):
+# 	def __repr__(self):
+# 		print("NONE OF YOUR BUSINESS")
+# 		return super().__repr__()
 
-	def __missing__(self, key):
-		print(f"THAT THING YOU WANT ISN'T IN HERE")
+# 	def __missing__(self, key):
+# 		print(f"THAT THING YOU WANT ISN'T IN HERE")
 
-	def __setitem__(self, key, value):
-		print("Why do you always have to change things?")
-		print(f"Ugh fine, setting {key} to {value}")
-		super().__setitem__(key, value)
+# 	def __setitem__(self, key, value):
+# 		print("Why do you always have to change things?")
+# 		print(f"Ugh fine, setting {key} to {value}")
+# 		super().__setitem__(key, value)
